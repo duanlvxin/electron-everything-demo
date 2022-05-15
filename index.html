@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Everything</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+  <div class="input-wrap">
+    <button id="btn">选择目录</button>
+    <input class="input" type="text">
+  </div>
+  <div id="file-list">
+    <div id="file-list__header">
+      <span>文件名</span>
+      <span>路径</span>
+      <span>大小</span>
+      <span>创建时间</span>
+      <span>更改时间</span>
+    </div>
+    <div id="file-list__content"></div>
+    <div id="file-list__content--loading" style="display: none;">
+      <div>加载中。。。</div>
+    </div>
+    <script src="./renderer.js"></script>
+  </div>
+</body>
+
+</html>
